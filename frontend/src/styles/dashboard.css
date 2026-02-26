@@ -1,0 +1,84 @@
+/* dashboard.css */
+.card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.5rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+}
+
+.badge-emergency {
+    background-color: var(--color-emergency);
+}
+
+.badge-high {
+    background-color: var(--color-high);
+}
+
+.badge-medium {
+    background-color: var(--color-medium);
+    color: #333;
+}
+
+.badge-low {
+    background-color: var(--color-low);
+}
+
+/* Status Badges */
+.badge-pending {
+    background-color: #f39c12;
+}
+
+.badge-progress {
+    background-color: #3498db;
+}
+
+.badge-completed {
+    background-color: #2ecc71;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+.list-thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: var(--color-border);
+}
